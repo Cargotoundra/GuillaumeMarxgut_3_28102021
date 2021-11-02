@@ -1,0 +1,146 @@
+@keyframes cursor {
+    from {
+        cursor: wait;
+    }
+    to {
+        cursor: default;
+    }
+} 
+
+body{
+    width: 100%;
+    margin: 0px;
+    font-family: 'roboto', sans-serif;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    /*animation-name: cursor;
+    animation-iteration-count:initial; ANINAMTION SOURIS*/ 
+
+
+    --primaire-color : #9456DC;
+    --secondaire-color: #FF79DA;
+    --tertiaire-color : #99E2D0;
+    --bs-gradient: linear-gradient(180deg, #FF79DA, #9456DC);
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+
+header img {
+    width: 60%;
+}
+
+/* GEOLOCALIASTION */
+
+.geolocalisation {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e0e0e0;
+    box-shadow: inset 0px 2px 2px rgb(62,62,62,0.2);
+}
+
+.geolocalisation span {
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+/* RESERVATION */
+
+#Reservation {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #f2f2f2
+}
+
+#Reservation h1{
+    margin-top: 0px;
+}
+
+#Reservation p {
+    font-weight: lighter;
+}
+
+.btn {
+    padding: 15px 25px 15px 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0px solid;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #FF79DA 5%, #9456DC)
+
+}
+
+/* FONCTIONNEMENT */
+
+#fonctionnement {
+    padding: 20px;
+}
+
+.liste_choix{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    margin-bottom: 15px;
+    box-shadow: 6px 6px 4px #f2f2f2;
+    border-radius: 15px;
+    height: 60px;
+    align-items: center;
+}
+
+.liste_choix .choix_numéro {
+    background-color: #9456DC;
+    color: white;
+    border-radius: 50%;
+    width : 25px;
+    height: 25px;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: 15px;
+}
+
+.liste_choix .choix_numéro .numero {
+    text-align: center;
+    margin: 3px 0px 0px 0px;
+}
+
+.liste_choix .fas {
+    margin-right: 15px;
+    opacity: 0.55;
+}
+
+.liste_choix .choix {
+    font-weight: 400;
+}
+
+.liste .liste_choix:nth-child(3) {
+   background-color: rgb(147,86,220,0.1);
+}
+
+.liste .liste_choix:nth-child(3) .fas{
+    color: rgb(147,86,220);
+    opacity: 1;
+}
