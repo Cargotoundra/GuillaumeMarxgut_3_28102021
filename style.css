@@ -27,6 +27,17 @@ h1,h2,h3,h4 {
     font-family: 'Roboto', sans-serif;
 }
 
+.none {
+    text-decoration: none;
+    color: black;
+}
+
+.none-wh {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter ;
+}
+
 /* HEADER */
 
 header {
@@ -166,8 +177,6 @@ header img {
     width: 100%;
     background-color: white;
     border-radius: 10px ;
-    text-decoration: none;
-    color: black;
     box-shadow: 3px 3px 5px #e0e0e0;
     margin-bottom: 15px;
 }

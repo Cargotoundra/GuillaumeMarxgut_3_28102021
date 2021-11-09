@@ -31,6 +31,13 @@ p {
     margin: 0px;
 }
 
+
+.none-wh {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter ;
+}
+
 /* HEADER */
 
 header {
@@ -101,11 +108,62 @@ header img {
     box-sizing: border-box;
 }
 
+.details_item{
+    padding: 10px;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     margin-bottom: 15px;
+}
+
+.test2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+@keyframes slidein {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+}
+
+@keyframes transform {
+    from {transform: rotate(0deg);}
+    to   {transform: rotate(360deg);}
+}
+
+.test2 .hover {
+    width: 50px;
+    height: 60px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--tertiaire-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.menu_details:hover .hover{
+    width: 50px;
+    height: 60px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--tertiaire-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1s slidein;
+    transform-origin: 100% 50%;
+}
+
+.menu_details:hover .hover2{
+    animation: 800ms transform 200ms;
+}
+
+.hover .fas{
+    color: white;
 }
 
 .light {
@@ -126,9 +184,23 @@ header img {
     margin-bottom: 5px;
 }
 
+.header_menu .fas:after{
+    top:100%;
+}
+
+.header_menu .fas:hover:after{
+    top:0%;
+}
+
 .header_menu .fas {
     font-size: x-large;
     font-weight: lighter;
+    transition: color 1s ease-in .1s;
+}
+
+.header_menu .fas:hover {
+    color: var(--primaire-color);
+    font-weight: bold;
 }
 
 .divider {
@@ -141,7 +213,7 @@ header img {
     height: auto;
     background-color: white;
     border-radius: 15px;
-    padding: 10px;
+    /*padding: 10px;*/
     margin-bottom: 15px;
 }
 
@@ -156,7 +228,8 @@ header img {
 .details .price {
     display: flex;
     align-self: flex-end;
-    
+    height: 60px;
+    align-items: flex-end;
 }
 
 .details .price p{
@@ -178,7 +251,11 @@ header img {
     border-radius: 30px;
     background: linear-gradient(to bottom, #FF79DA 5%, #9456DC);
     align-items: center;
+    cursor: pointer;
+}
 
+.btn:hover {
+    filter: brightness(1.1);
 }
 
 /* FOOTER */
