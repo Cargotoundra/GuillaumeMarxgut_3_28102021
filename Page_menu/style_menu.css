@@ -13,6 +13,7 @@
     to   {transform: rotate(360deg);}
 }
 
+
 body {
     width: 100%;
     margin: 0px;
@@ -94,21 +95,21 @@ header img {
 }
 
 .a_la_fr {
-    background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
 
 .la_no_en {
-    background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
     background-position: center;
 }
 
 .la_pa_du_go {
-    background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-position: center;
 }
 
 .le_de_de_se{
-    background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     background-position: center;
 }
 
@@ -125,6 +126,10 @@ header img {
 
 .details_item{
     padding: 10px;
+}
+
+.details_item >*{
+    text-overflow: ellipsis;
 }
 
 .menu {
@@ -186,6 +191,7 @@ header img {
     font-weight: lighter;
     font-size: 14px;
     margin-top: 3px;
+    text-overflow: ellipsis;
 }
 
 .header_menu {
@@ -203,7 +209,8 @@ header img {
 .header_menu .fas {
     font-size: x-large;
     font-weight: lighter;
-    transition: all 1000ms ease;
+    transition: all ease;
+    transition-duration: 1s;
 }
 
 .header_menu .fas:hover {
@@ -222,6 +229,7 @@ header img {
     background-color: white;
     border-radius: 15px;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .details {
@@ -229,9 +237,32 @@ header img {
     flex-direction: row;
     justify-content: space-between;
     height: 100%;
+    width: 100%;
     align-items: center;
     flex-wrap: nowrap;
     padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.details_items{
+    width: 100%;
+    overflow: hidden;
+}
+
+.details_items >*{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.ellipsis{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .details .price {
