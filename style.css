@@ -1,3 +1,51 @@
+@media (min-width : 992px) {
+    .liste {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .liste .liste_choix {
+        width: 28%;
+    }
+
+    #restaurants .restaurants {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .restaurants .article {
+        width: 48%;
+        margin-bottom: 40px;
+    }
+
+    .article .img3{
+        background-position: center;
+    }
+
+}
+
+@media (min-width : 768px) {
+    
+    #restaurants .restaurants {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .restaurants .article {
+        width: 48%;
+        margin-bottom: 40px;
+    }
+
+    .article .img3{
+        background-position: center;
+    }
+}
+
 @keyframes hidden{
     0%{
         opacity: 0;
