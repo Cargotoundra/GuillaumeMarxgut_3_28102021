@@ -1,4 +1,6 @@
 $btn-color: linear-gradient(to bottom, #FF79DA 5%, #9456DC);
+$primary-color:#9456DC;
+$secondary-color:#FF79DA;
 
 @keyframes hidden {
 	0% {
@@ -104,10 +106,6 @@ body {
 	width: 100%;
 	margin: 0px;
 	font-family: 'roboto', sans-serif;
-	--primaire-color: #9456DC;
-	--secondaire-color: #FF79DA;
-	--tertiaire-color: #99E2D0;
-	--bs-gradient: linear-gradient(180deg, #FF79DA, #9456DC);
 }
 h1 {
 	font-family: 'Roboto', sans-serif;
@@ -155,11 +153,11 @@ h4 {
 	margin-bottom: 10%;
 	height: 60px;
 	background-color: #f2f2f2;
-	border: 5px solid var(--primaire-color);
+	border: 5px solid $primary-color;
 }
 .loader-barre-content {
 	display: flex;
-	background: linear-gradient(to right, #FF79DA, #9456DC);
+	background: linear-gradient(to right, $secondary-color, $primary-color);
 	height: 100%;
 	width: 100%;
 	color: black;
@@ -217,9 +215,10 @@ header {
 	border: 0px solid;
 	border-radius: 30px;
     cursor: pointer;
-	background: linear-gradient(to bottom, #FF79DA 5%, #9456DC);
+	background-color: $primary-color;
+	background-image: linear-gradient(to bottom, $secondary-color 5%, rgba(255,255,255,0.1));
 	&:hover {
-		background: lighten(background,20%);
+		background-color: lighten($primary-color, 10%);
 	}
 }
 #fonctionnement {
@@ -238,7 +237,7 @@ header {
 	height: 60px;
 	align-items: center;
 	.choix_numéro {
-		background-color: #9456DC;
+		background-color: $primary-color;
 		color: white;
 		border-radius: 50%;
 		width: 25px;
@@ -312,7 +311,7 @@ header {
 		&:hover {
 			transition: all 1s ease;
 			font-weight: bold;
-			color: var(--primaire-color);
+			color: $primary-color;
 		}
 	}
 }

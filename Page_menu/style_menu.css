@@ -174,22 +174,21 @@ header img {
 }
 
 .a_la_fr {
-  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-position: center;
+  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
 
 .la_no_en {
-  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-position: center;
 }
 
 .la_pa_du_go {
-  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-position: center;
 }
 
 .le_de_de_se {
-  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-position: center;
 }
 
@@ -259,7 +258,7 @@ header img {
   width: 50px;
   height: 60px;
   border-radius: 0px 10px 10px 0px;
-  background-color: var(--tertiaire-color);
+  background-color: #99E2D0;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -275,7 +274,7 @@ header img {
   width: 50px;
   height: 60px;
   border-radius: 0px 10px 10px 0px;
-  background-color: var(--tertiaire-color);
+  background-color: #99E2D0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,13 +335,13 @@ header img {
 }
 
 .header_menu .fas:hover {
-  color: var(--primaire-color);
+  color: #9456DC;
   font-weight: bold;
 }
 
 .divider {
   width: 38px;
-  border-bottom: 3px solid var(--tertiaire-color);
+  border-bottom: 3px solid #99E2D0;
   margin-bottom: 20px;
 }
 
@@ -428,8 +427,9 @@ header img {
   font-size: 15px;
   border: 0px solid;
   border-radius: 30px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #FF79DA), to(#9456DC));
-  background: linear-gradient(to bottom, #FF79DA 5%, #9456DC);
+  background-color: #9456DC;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #FF79DA), to(rgba(255, 255, 255, 0.1)));
+  background-image: linear-gradient(to bottom, #FF79DA 5%, rgba(255, 255, 255, 0.1));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -437,8 +437,7 @@ header img {
 }
 
 .btn:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
+  background-color: #af80e5;
 }
 
 /* FOOTER */
@@ -500,3 +499,4 @@ footer {
 .footer_line > * {
   margin: 0px 0px 12px 0px;
 }
+/*# sourceMappingURL=style_menu.css.map */
