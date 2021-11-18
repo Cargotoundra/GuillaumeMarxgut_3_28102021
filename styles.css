@@ -377,11 +377,11 @@ header img {
   font-weight: 400;
 }
 
-.liste .liste_choix:nth-child(3) {
+.liste .liste_choix:hover {
   background-color: rgba(147, 86, 220, 0.1);
 }
 
-.liste .liste_choix:nth-child(3) .fas {
+.liste .liste_choix:hover .fas {
   color: #9356dc;
   opacity: 1;
 }
