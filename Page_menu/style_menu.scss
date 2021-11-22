@@ -232,11 +232,15 @@ body {
     font-size: x-large;
     font-weight: lighter;
     transition: all ease;
-    transition-duration: 1s;
+    transition-duration: 500ms;
   
     &:hover {
-      color: $primary-color;
-      font-weight: bold;
+      transition: all 500ms ease;
+			font-weight: bold;
+			border: transparent;
+			background: -webkit-linear-gradient($primary-color, $secondary-color);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
     }
   }
   

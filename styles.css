@@ -457,10 +457,14 @@ header img {
 }
 
 .article_details .far:hover {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-size: normal;
   font-weight: bold;
-  color: #9456DC;
+  border: transparent;
+  background: -webkit-linear-gradient(#9456DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .article_img .img_new {

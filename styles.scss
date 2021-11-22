@@ -322,10 +322,14 @@ header {
 	align-items: center;
 	padding: 0px 10px 0px 10px;
 	.far {
-		&:hover {
-			transition: all 1s ease;
+		&:hover  {
+			transition: all 500ms ease;
+			font-size: normal;
 			font-weight: bold;
-			color: $primary-color;
+			border: transparent;
+			background: -webkit-linear-gradient($primary-color, $secondary-color);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
 		}
 	}
 }
